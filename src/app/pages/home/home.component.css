@@ -1,0 +1,94 @@
+.btn, .btn:hover{
+    background-color: #e4cd9e;
+    color: black;
+    border: 2px solid #e4cd9e !important;
+    border-radius: 0%;
+}
+
+.newsCard {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background-color: #fff;
+    color:#fff;
+    overflow: hidden;
+    border-radius: 6px;
+  }
+  
+  figure img {
+  display: block;
+  object-fit: cover !important;
+  object-position: center center !important; height: 100%;
+  width: 100%;
+  }
+  
+  .overlay{
+    background: rgb(40,26,54);
+    background: -moz-linear-gradient(0deg, rgba(40,26,54,1) 0%, rgba(89,59,116,0) 100%);
+    background: -webkit-linear-gradient(0deg, rgba(40,26,54,1) 0%, rgba(89,59,116,0) 100%);
+    background: linear-gradient(0deg, rgba(40,26,54,1) 0%, rgba(89,59,116,0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#281a36",endColorstr="#593b74",GradientType=1);
+    display: block;
+    position: absolute;
+    height: 100px;
+    width: 100%;
+    bottom: 0;
+    z-index: 3;
+  }
+  
+  .newsCaption {
+    position: absolute;
+    top: auto;
+    bottom: 31px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    z-index: 10;
+    /* padding: 15px; */
+    -webkit-transform: translateY(80%);
+    transform: translateY(80%);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition:  -webkit-transform 0.4s;
+    transition:  -webkit-transform 0.4s;
+    transition: transform 0.4s;
+    transition: transform 0.4s,  -webkit-transform 0.4s;
+  }
+  .newsCaption i{font-size: 24px;}
+  
+  .newsCaption-title {
+    margin-top: 0px;
+  }
+  .newsCaption-content {
+    margin: 0;
+  }
+  
+  .newsCaption-link {
+    color: #fff;
+    text-decoration: underline;
+    opacity: .8;
+    -webkit-transition-property: opacity;
+    transition-property: opacity;
+    -webkit-transition-duration: 0.15s;
+            transition-duration: 0.15s;
+    -webkit-transition-timing-function: cubic-bezier(0.39, 0.58, 0.57, 1);
+            transition-timing-function: cubic-bezier(0.39, 0.58, 0.57, 1);
+  }
+
+  .news-Slide-up:hover .overlay{ 
+    background: #e4cd9e;
+    background: -moz-linear-gradient(0deg, #e4cd9e 0%, #e4cd9e 100%);
+    background: -webkit-linear-gradient(0deg, #e4cd9e 0%, #e4cd9e 100%);
+    background: linear-gradient(0deg, #e4cd9e 0%, #e4cd9e 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#400a6f",endColorstr="#593b74",GradientType=1);
+  }
+  
+  .news-Slide-up:hover .newsCaption {
+  
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    -webkit-transition:  -webkit-transform 0.4s;
+    transition: -webkit-transform 0.4s;
+    transition: transform 0.4s;
+    transition: transform 0.4s, -webkit-transform 0.4s;
+  }

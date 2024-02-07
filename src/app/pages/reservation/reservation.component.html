@@ -1,0 +1,33 @@
+<header class="masthead">
+  <div class="">
+    <div class="masthead-heading text-uppercase"></div>
+    <!-- <a class="btn btn-primary btn-xl text-uppercase" href="#">Discover more</a> -->
+  </div>
+</header>
+
+<div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-10">
+        <h1>Reservations</h1>
+        <h2>All reservations are listed below:</h2>
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Date</th>
+                <th scope="col">Time</th>
+                <th scope="col">Bay #</th>
+                <th scope="col"></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let t of timeslots">
+                <th scope="row">{{t.date}}</th>
+                <td>{{t.startTime}}</td>
+                <td>{{t.bay}}</td>
+                <td><button type="button" class="btn btn-danger" (click)="openDeleteConfirmationDialog(t)">Cancel</button></td>
+              </tr>
+            </tbody>
+          </table>
+      </div>
+    </div>
+  </div>

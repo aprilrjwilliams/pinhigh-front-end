@@ -1,0 +1,39 @@
+.container{
+    margin: 5rem auto;
+}
+
+p {
+    margin: 0 0 1.88em;
+}
+
+.abut, .table-button td a {
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 1.4rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    line-height: 1em;
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+    background-color: #e4cd9e;
+    background-image: none;
+    border: 2px solid #e4cd9e;
+    border-radius: 0;
+    padding: 21px 30px 20px;
+    margin: 0;
+    display: inline-block;
+    width: auto;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    text-decoration: pointer;
+}

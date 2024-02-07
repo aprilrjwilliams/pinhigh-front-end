@@ -1,0 +1,160 @@
+.container{
+    margin: auto;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    min-height: 50rem;
+    display: flex;
+    justify-content: center;
+}
+
+.center {
+    text-align: center;
+}
+
+
+.login-wrap {
+    padding: 30px;
+    width: 100%;
+    max-width: 430px;
+    margin: 0 auto;
+    border: solid #EAEAEA 2px;
+    border-radius: 4px;
+}
+
+.login-instruct{
+    text-align: center;
+    padding-bottom: 17px;
+}
+
+.form-floating {
+    margin-bottom: 10px;
+}
+
+.form-signin {
+    max-width: 330px;
+    padding: 1rem;
+}
+
+.form-signin input[type="email"] {
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+label{
+    font-size: initial;
+}
+
+.form-control{
+    border-radius: 0px;
+    border: 2px solid #e4cd9e;
+}
+
+.form-control:focus{
+    box-shadow: none;
+}
+
+button.btn, button.btn:hover{
+    background-color: #e4cd9e;
+    color: black;
+    border: none;
+}
+
+.form-check-input[type=checkbox]{
+    border-radius: 0%;
+    border-color: #e4cd9e;
+}
+
+.form-check-input:focus {
+    border-color: #e4cd9e;
+    outline: 0;
+    box-shadow: none;
+}
+
+.form-check-input:checked{
+    background-color: #e4cd9e;
+}
+
+.form-control{
+    min-height: 50px;
+    font-size: 1.5rem;
+}
+
+.btn{
+    font-size: 1.5rem;
+}
+
+a{
+    color: #555;;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    text-decoration: pointer;
+}
+
+.form-floating > .form-control:not(:placeholder-shown){
+    padding-top: 2.5rem;
+}
+
+
+
+
+/* .container{
+    background-color: white;
+}
+
+
+body{
+    margin-top:20px;
+    background-color: #f2f3f8;
+}
+
+h1 {
+    font-family: "Nunito Sans", sans-serif;
+}
+
+.card {
+    margin-bottom: 1.5rem;
+    box-shadow: 0 1px 15px 1px rgba(52,40,104,.08);
+}
+
+.card {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #c9b58c;
+    background-clip: border-box;
+    border: 1px solid #c9b58c;
+    border-radius: .2rem;
+}
+
+.form-group{
+    padding-bottom: 10px;
+}
+
+.form-control{
+    background-color: white;
+    color: black;
+} */
+
+.form-control input::placeholder:focus{ /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: black;
+    opacity: 1; 
+    /* Firefox */
+}
+
+/* label{
+    color: black;
+}
+
+.btn{
+    background-color: black;
+    border-color: black;
+    color: white;
+} */
