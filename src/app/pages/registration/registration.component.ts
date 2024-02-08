@@ -54,7 +54,7 @@ export class RegistrationComponent implements OnInit {
         console.log("newUser ", data);
         //Route new user to login after signup
         if (data?.message == "User created") {
-          this.router.navigate(["/login"]);
+          this.router.navigate(["/members"]);
         }
       });
   }

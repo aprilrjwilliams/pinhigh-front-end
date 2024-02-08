@@ -1,0 +1,75 @@
+<header class="masthead">
+  <div class="">
+    <div class="masthead-heading text-uppercase"></div>
+    <!-- <a class="btn btn-primary btn-xl text-uppercase" href="#">Discover more</a> -->
+  </div>
+</header>
+
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-lg-10">
+      <h1>Members</h1>
+      <p>
+        You can filter Member data by searching first name, last name, phone number, or email.
+      </p>
+
+      <form>
+        <div class="mb-3 row">
+          <label
+            for="table-filtering-search"
+            class="col-xs-3 col-sm-auto col-form-label"
+            >Search:</label
+          >
+          <div class="col-xs-3 col-sm-auto">
+            <input
+              id="table-filtering-search"
+              class="form-control"
+              type="text"
+              [formControl]="filter"
+            />
+          </div>
+        </div>
+      </form>
+
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th scope="col">Last Name</th>
+            <th scope="col">First Name</th>
+            <th scope="col">Phone</th>
+            <th scope="col">Email</th>
+          </tr>
+        </thead>
+        <tbody>
+          @for (user of users$ | async; track user.email; let i =
+          $index) {
+          <tr>
+            <td>
+              <ngb-highlight [result]="user.lastname" [term]="filter.value" />
+            </td>
+            <td>
+              <ngb-highlight [result]="user.firstname" [term]="filter.value" />
+            </td>
+            <td>
+              <ngb-highlight
+                [result]="user.phone"
+                [term]="filter.value"
+              />
+            </td>
+            <td>
+              <ngb-highlight
+                [result]="user.email"
+                [term]="filter.value"
+              />
+            </td>
+          </tr>
+          } @empty {
+          <tr>
+            <td colspan="4" style="text-align: center">No user found</td>
+          </tr>
+          }
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

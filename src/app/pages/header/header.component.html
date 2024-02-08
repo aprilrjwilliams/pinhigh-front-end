@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-dark" id="mainNav">
+<nav class="navbar navbar-expand-lg" id="mainNav">
     <div class="container">
       <a class="navbar-brand" routerLink="/"
         ><img src="./../assets/phlogo.png" alt="..."
@@ -37,6 +37,15 @@
               <li><a class="dropdown-item" routerLink="/book">Book</a></li>
               <li><a class="dropdown-item" routerLink="/reservation">My Reservations</a></li>
               <li *ngIf="adminUser"><a class="dropdown-item" routerLink="/admin-res">All Reservations</a></li>
+            </ul>
+          </li>
+          <li *ngIf="adminUser" class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Members
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" routerLink="/registration">Add Member</a></li>
+              <li><a class="dropdown-item" routerLink="/members">All Members</a></li>
             </ul>
           </li>
           <li class="nav-item">

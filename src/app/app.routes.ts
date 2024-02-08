@@ -17,6 +17,7 @@ import { AdminReservationsComponent } from './pages/admin-reservations/admin-res
 import { ForgotPasswordComponent } from './pages/forgot-password/forgot-password.component'
 import { AuthGuard } from './service/route-guard';
 import { ResetComponent } from './pages/reset/reset.component'
+import { MembersComponent } from './pages/members/members.component'
 
 export const routes: Routes = [
     {
@@ -83,6 +84,10 @@ export const routes: Routes = [
     {
       path: 'reset/:token',
       component: ResetComponent
+    },
+    {
+      path: 'members',
+      component: MembersComponent
     },
     { path: '**', redirectTo: '' }
 ];
